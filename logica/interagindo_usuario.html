@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interagindo com Usuario</title>
+</head>
+
+    <body>
+
+        <script>
+
+        function escreva (texto)
+        {document.write(texto);}
+    
+        function calculaImc (peso, altura)
+        {var imc = peso / (altura * altura);
+            return imc.toFixed(2);}
+
+        // No método toFixed() você controla o número de casas decimais após a vírgula.
+        // arredondando o número para cima!
+
+        
+        var nome = prompt("Infore seu nome");
+        var altura = parseFloat(prompt("Informe sua altura:"));
+        var peso = parseFloat(prompt("Agora seu peso:"));
+
+        var imc = calculaImc(peso, altura);
+
+        escreva("Olá, " + nome + "! Seu IMC é: " + imc);
+
+        </script>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
